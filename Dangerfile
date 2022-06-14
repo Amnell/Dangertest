@@ -82,11 +82,11 @@ end
 ################################################
 # Check `lock` files
 
-need_fixes << changelog.check!
+changelog_ok = changelog.check!
 
 ################################################
 # Encouragement message
-if need_fixes.empty?
+if need_fixes.empty? && changelog_ok == true
   markdown('Seems like everything is in order 👍 You did a good job here! 🤝')
 else
   markdown('Once you fix those tiny nitpickings above, we should be good to go! 🙌')
