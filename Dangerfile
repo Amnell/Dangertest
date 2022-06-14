@@ -89,6 +89,5 @@ if need_fixes.empty?
   markdown('Seems like everything is in order 👍 You did a good job here! 🤝')
 else
   markdown('Once you fix those tiny nitpickings above, we should be good to go! 🙌')
-  markdown(changelog_msg) unless changelog_msg.empty?
   markdown('ℹ️ _I will update this comment as you add new commits_')
 end
