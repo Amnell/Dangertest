@@ -6,6 +6,7 @@ is_hotfix = github.branch_for_head.start_with?('hotfix/')
 changelog.filename = 'CHANGELOG.md'
 # changelog.format = :keep_a_changelog
 changelog.ignore_files = ['README.md', 'UPGRADING.md', /\.github.*$/]
+changelog.placeholder_line = "* Your change here.\n"
 
 ################################################
 # Welcome message
